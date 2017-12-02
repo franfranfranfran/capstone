@@ -38,7 +38,7 @@ html {
   justify-content: center;
 }
 .banner1 img {
-  width: 70%;
+  width: 80%;
   height: auto;
   margin-left: 1.5rem;
   margin-top: 2rem;
@@ -58,5 +58,59 @@ html {
   font-size: 1.75rem;
   background-color: darkgray;
   color: white;
+}
+.middle {
+  width: 70rem;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 60% 20% 20%;
+  grid-template-rows: 15rem 15rem 15rem;
+  grid-template-areas:
+    "a b c"
+    "a i e"
+    "f g h";
+}
+.info img {
+  grid-area: a;
+  width: 80%;
+  height: auto;
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.hurt {
+  grid-area: f;
+  width: 80%;
 
+}
+.orientation img {
+  grid-area: b;
+  width: 80%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.date {
+  grid-area: c;
+  width: 80%;
+  height: auto;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.our {
+  grid-area: e;
+  width: 80%;
+  height: auto;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.campus  {
+  grid-area: i;
+  width: auto;
+}
+.lecture {
+  grid-area: h;
+}
+.guest {
+  grid-area: g;
 }
