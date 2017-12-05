@@ -62,37 +62,38 @@ html {
 .middle {
   width: 70rem;
   display: grid;
-  margin: auto;
+  margin:  auto;
+  padding-bottom: 2rem;
+  align-items: center;
+  overflow: hidden;
   grid-template-columns: 60% 20% 20%;
-  grid-template-rows: 15rem 15rem 15rem;
+  grid-template-rows: 10rem 10rem 10rem;
   grid-template-areas:
     "a b c"
     "a i e"
     "f g h";
 }
-.info img {
+.info {
   grid-area: a;
   width: 80%;
   height: auto;
   margin-left: 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 .hurt {
   grid-area: f;
   width: 80%;
-
+  margin-left: 1.5rem;
 }
-.orientation img {
+.orientation {
   grid-area: b;
-  width: 80%;
+  width: 70%;
   height: auto;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+
 }
 .date {
   grid-area: c;
-  width: 80%;
+  width: 100%;
   height: auto;
   margin-top: 4rem;
   margin-bottom: 2rem;
@@ -104,13 +105,81 @@ html {
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
-.campus  {
+.campus {
   grid-area: i;
-  width: auto;
+  width: 70%;
+  height: auto;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+
 }
 .lecture {
   grid-area: h;
+  margin-top:  4rem;
+  margin-bottom: 2rem;
+}
+.button {
+  color: blue;
 }
 .guest {
+  grid-area: g;
+  width: 70%;
+  height: auto;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.hurt h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.hurt h4 {
+  font-size: .75rem;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.start {
+  display: grid;
+  width: 70rem;
+  height: auto;
+  margin: auto;
+  justify-content: space-around;
+  grid-template-columns: 19rem 19rem 19rem;
+  grid-template-rows: 22rem 22rem 22rem;
+  grid-row-gap: 1rem;
+  grid-template-areas:
+  ". a ."
+  "b c d"
+  "e f g";
+  grid-column-gap: 1rem;
+}
+.start h1 {
+  grid-area: a;
+  margin: auto;
+}
+.soft,.comp,.design,.data,.business,.marketing {
+  width: 100%;
+  height: auto;
+}
+.start img {
+  width: 100%;
+}
+.soft {
+  grid-area: b;
+}
+.comp {
+  grid-area: c;
+}
+.design {
+  grid-area: d;
+}
+.data {
+  grid-area: e;
+}
+.business {
+  grid-area: f;
+}
+.marketing {
   grid-area: g;
 }
